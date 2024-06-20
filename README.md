@@ -1,292 +1,136 @@
-Sure, here's the full README with all the headings, subheadings, and href links:
+# AI-Scribe - Your Hub for Interactive Discussions
 
-```markdown
-<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
-<a name="readme-top"></a>
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
-
-
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-
-
-<!-- PROJECT LOGO -->
-<br />
 <div align="center">
-  <a href="https://aiscribe-v7me.onrender.com">
-    <img src="https://res.cloudinary.com/dngfmzv2g/image/upload/v1695238520/ai-scribe-website-favicon-color_rqk9oe.png" alt="Logo" width="90" height="90">
-  </a>
-
-  <h3 align="center">AI Scribe</h3>
-
-  <p align="center">
-    An interactive web platform where users can provide a story prompt, and AI generates a short story based on that prompt. Users can also upvote their favorite stories, which are showcased on a leaderboard.
-    <br />
-    <a href="#"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://aiscribe-v7me.onrender.com">View Demo</a>
-    ·
-    <a href="https://github.com/Mdkaif-123/AI-Scribe/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/Mdkaif-123/AI-Scribe/issues">Request Feature</a>
-  </p>
+  [![AI-Scribe Banner](https://res.cloudinary.com/dngfmzv2g/image/upload/v1695238520/ai-scribe-website-favicon-color_rqk9oe.png)](https://github.com/mdkaifansari04/AI-Scribe)
 </div>
 
+AI-Scribe is a dynamic web application that brings discussions to life using cutting-edge technologies such as Next.js 14, MongoDB, and Clerk for authentication. From its humble beginnings, AI-Scribe has evolved into a robust platform featuring optimized architecture, polished code, and a sleek UI. Join the conversation seamlessly and explore the world of interactive discussions!
 
+## ⚡ Project Status
 
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#core-functionality">Core Functionality</a></li>
-        <li><a href="#technology-stack">Technology Stack</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a>
-      <ul>
-        <li><a href="#user-usage">As a User</a></li>
-        <li><a href="#admin-usage">As an Admin</a></li>
-      </ul>
-    </li>
-    <li><a href="#roadmap">Roadmap</a>
-      <ul>
-        <li><a href="#phase-1-project-initiation">Phase 1: Project Initiation</a></li>
-        <li><a href="#phase-2-development-and-testing">Phase 2: Development and Testing</a></li>
-        <li><a href="#phase-3-launch-and-post-launch">Phase 3: Launch and Post-launch</a></li>
-        <li><a href="#future-enhancements">Future Enhancements</a></li>
-      </ul>
-    </li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
+<div align="center">
 
+![GitHub contributors](https://img.shields.io/github/contributors/mdkaifansari04/AI-Scribe?style=for-the-badge&color=%2314B8A5)
+![license MIT](https://img.shields.io/github/license/mdkaifansari04/AI-Scribe?style=for-the-badge&color=%2314B8A5)
+![Stargazers](https://img.shields.io/github/stars/mdkaifansari04/AI-Scribe?style=for-the-badge&color=%2314B8A5)
+![Forks](https://img.shields.io/github/forks/mdkaifansari04/AI-Scribe?style=for-the-badge&color=%2314B8A5)
 
+![GitHub Open issues](https://img.shields.io/github/issues/mdkaifansari04/AI-Scribe?style=for-the-badge&color=%2314B8A5)
+![GitHub Closed issues](https://img.shields.io/github/issues-closed/mdkaifansari04/AI-Scribe?style=for-the-badge&color=%2314B8A5)
+![GitHub PR Open](https://img.shields.io/github/issues-pr/mdkaifansari04/AI-Scribe?style=for-the-badge&color=%2314B8A5)
+![GitHub PR closed](https://img.shields.io/github/issues-pr-closed/mdkaifansari04/AI-Scribe?style=for-the-badge&color=%2314B8A5)
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/mdkaifansari04/AI-Scribe?style=for-the-badge&color=%2314B8A5)
+![GitHub top language](https://img.shields.io/github/languages/top/mdkaifansari04/AI-Scribe?style=for-the-badge&color=%2314B8A5)
+[![Discord Community](https://img.shields.io/badge/Join-Discord_Community-%2314B8A5.svg?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/qqnfcudX)
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+</div>
 
-About the Project
+- [Why Open Source?](#-why-open-source)
+- [Technology Used](#-technology-used)
+- [Live Demo](#live-demo-)
+- [Introduction](#-introduction)
+- [What does it do?](#-what-does-it-do)
+  - [Features](#features)
+  - [Benefits](#benefits)
+- [License](#%EF%B8%8F-license)
+- [How to Contribute?](#-how-to-contribute)
+  - [Setup](#setup)
+- [Top Contributors](#-top-contributors)
+- [Support](#-support)
 
-"AI Scribe is" an innovative web platform designed to provide users with captivating short stories generated by artificial intelligence. This platform leverages cutting-edge AI technology to turn user-provided story prompts into engaging narratives. Here's how it works:
+## 🤔 Why Open Source?
 
-### Core Functionality
-Story Prompt Submission: Users can input story prompts, which serve as the creative spark for the AI model.
-AI-Generated Stories: The platform utilizes a state-of-the-art text generation model, such as GPT-3 or GPT-4 from OpenAI, to create short stories based on the provided prompts.
-Story Display and Interaction: Generated stories are displayed in an attractive format, allowing users to read, save, and share them.
-Upvoting System: Users can upvote their favorite stories, and these top-voted stories are prominently featured on a leaderboard.
+Contributing to open source provides immense opportunities to work on diverse projects and with various mentors, gaining unique insights and ideas. It’s a platform where contributors grow together with a constructive and positive attitude.
 
-### Technology Stack
-The AI Story Generator is built using a modern technology stack to ensure a seamless user experience:
+This repository aims to provide such a platform, allowing contributors to bring innovative ideas for interactive discussions and make our application better.
 
-- Frontend: The user interface is developed using React, a popular JavaScript library for building interactive web applications. [![React][React.js]][React-url]
-- Backend: The backend infrastructure is powered by Node.js, providing the necessary server capabilities. [![Node.js][NodeJS]][NodeJS-url]
-- Database: User data, generated stories, and upvotes are stored securely in a MongoDB database, ensuring data persistence. [![MongoDB][MongoDB]][MongoDB-url]
-- OpenAI API Integration: The heart of the project lies in the integration of the OpenAI API. This API interacts with the text generation model, fine-tuned specifically for short story generation.
-- Efficient Resource Management: The platform incorporates resource management techniques to handle the computational demands of AI text generation efficiently. This may include setting word limits or employing asynchronous processing for scalability.
+<h5 align="center"><i>If you like the project, please <a href="https://github.com/mdkaifansari04/AI-Scribe/stargazers">★</a> this repository to show your support! 🤩</i></h5>
 
+## 🚀 Technology Used
 
-### Built With
-
-* [React][React-url]
-* [TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
-* [MUI](https://img.shields.io/badge/MUI-%230081CB.svg?style=for-the-badge&logo=material-ui&logoColor=white) 
-* [NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)
-* [React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
-* [NodeJS](https://img
-
-.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
-* [Material Tailwind](https://img.shields.io/badge/Material-Tailwind-%230081CB.svg?style=for-the-badge&logo=material-ui&logoColor=white) 
-* [MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white) 
-* [JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- GETTING STARTED -->
-## Getting Started
-
-Follow these instruction to setup the project into your local machine
-
-### Prerequisites
-
-Before you can run the "Task Unity" software, ensure you have the following prerequisites installed on your system:
-
-* **Node.js**: "Task Unity" relies on Node.js for server-side operations. If you don't have Node.js installed, you can download it from [nodejs.org](https://nodejs.org/).
-
-  To check if you have Node.js installed, open your terminal and run:
+<div align="center">
   
-  ```sh
-  node -v
-  ```
-  If Node.js is not installed, please follow the link to download and install it.
+  ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+  ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+  ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+  ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+  ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+  ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+  ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+  ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+  ![OpenAI API](https://img.shields.io/badge/OpenAI_API-412991?style=for-the-badge&logo=openai&logoColor=white)
+  ![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)
+  ![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white)
+  ![Material Tailwind](https://img.shields.io/badge/Material_Tailwind-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-* **npm (Node Package Manager)**: Ensure you have the latest npm version by running:
+</div>
 
-  ```sh
-  npm install npm@latest -g 
-  ```
+- [MongoDB](https://www.mongodb.com) - A NoSQL database for modern web applications.
+- [Tailwind CSS](https://tailwindcss.com) - A utility-first CSS framework for rapidly building custom user interfaces.
+- [Vite](https://vitejs.dev) - A build tool that aims to provide a faster and leaner development experience for modern web projects.
+- [OpenAI API](https://beta.openai.com/docs/) - An API for accessing OpenAI's powerful language models for natural language understanding and generation.
+- [Express](https://expressjs.com) - A minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
+- [JWT](https://jwt.io) - JSON Web Tokens (JWT) are an open, industry-standard RFC 7519 method for representing claims securely between two parties.
+- [Material Tailwind](https://material.tailwindcss.com) - A Material Design implementation using Tailwind CSS, allowing for the rapid development of beautiful UIs with a utility-first approach.
 
-* **MongoDB**: Download and install MongoDB from [mongodb.com](https://www.mongodb.com/).
+## Live Demo 💻
 
-  ```sh
-  mongod --version
-  ```
+### Visit [AI-Scribe Live](https://ai-scribe.vercel.app/sign-in) to see the live demo!
 
-Once you have these prerequisites in place, you'll be ready to run "Task Unity" and experience efficient task management and collaboration.
+<br />
+<br />
 
-### Installation
+## 👋 Introduction
 
-_Below are the instructions of how you can install and set up your app._
+AI-Scribe is a social media platform designed for seamless and interactive discussions. Leveraging modern web technologies, it provides users with a sleek interface and robust functionality for community building and engagement.
 
-1. Clone the repo
-   ```sh
-   git clone https://github.com/Mdkaif-123/Task-Unity.git
-   ```
+## 🔨 What does it do?
 
-2. Cd into the backend folder
-   ```sh
-   cd ./Backend
-   ```
+AI-Scribe enables users to create and participate in vibrant communities. Users can share their thoughts, post updates, and engage in meaningful conversations. The platform supports various features to enhance user experience and foster engagement.
 
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
+### Features
 
-4. Cd into the frontend folder
-   ```sh
-   cd ./frontend
-   ```
+- **User Authentication**: Secure authentication using Clerk.
+- **Responsive Design**: Fully mobile-responsive to ensure accessibility across devices.
+- **User Search**: Easily find and connect with other users.
+- **Notifications**: Stay updated with activities in the notification tab.
+- **Community Creation**: Create communities, assign admin roles, and invite users via email.
+- **Profile Management**: View and manage your posts, activities, and more in your profile tab.
+- **Content Interaction**: Create posts, comment on others’ posts, and explore different communities.
 
-5. Install NPM packages
-   ```sh
-   npm install
-   ```
+### Benefits
 
-6. Set up your backend .env file
-   ```js
-   MONGO_DB_URL = "mongodb://127.0.0.1:27017/taskUnityDB"
-   AUTH_SECRET_KEY = "thisistheauthsecretkeyforauthenticationpurpose"
-   ```
+- **Enhanced Connectivity**: Connect and interact with like-minded individuals.
+- **Improved Collaboration**: Collaborate within communities to share ideas and insights.
+- **User-Friendly Interface**: An intuitive and polished user interface for a seamless experience.
+- **Growth Opportunities**: Engage with a wider audience and grow your network.
 
-7. Set up your frontend .env file
-   ```js
-   REACT_APP_HOST="http://localhost:8000"
-   ```
+## 🛡️ License
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+AI-Scribe is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+## 🤔 How to Contribute?
 
+Contributing to open-source software (OSS) projects is a rewarding experience. It allows you to learn new skills and make valuable contributions to the community.
 
-<!-- USAGE -->
-## Usage
+- Read our [Code of Conduct](CODE_OF_CONDUCT.md) before contributing.
+- Follow the [Git Workflow](docs/git.md) for best practices.
+- Check the [Contribution Guidelines](CONTRIBUTING.md) for detailed instructions.
+- Create an [issue](https://github.com/mdkaifansari04/AI-Scribe/issues) to report bugs or suggest new features.
+- Ensure your commits have descriptive messages.
 
-### As a User
+### Setup
 
-1. **Task Dashboard**: Get a clear view of assigned tasks, due dates, and priority levels.
-2. **Communication**: Directly message admins regarding tasks for clarification and updates.
-3. **Performance Tracking**: Use a personal dashboard displaying task completion rates, pending tasks, and delays for self-assessment.
-4. **Peer Progress**: View aggregate task progress of other users without compromising their privacy.
+- [Setting up a development environment](docs/setup.md)
+- [Setting up Clerk](docs/clerk.md)
 
-### As an Admin
+## ✨ Top Contributors
 
-1. **User Management**: As an admin, you can add, edit, and delete member profiles with relevant information.
-2. **Task Assignment**: Assign tasks to users, specifying task details, due dates, and priority for effective task management.
-3. **Communication**: Utilize the in-app messaging system to communicate with members seamlessly and integrate with WhatsApp for external communication.
-4. **Task Tracking**: Monitor completion rates, pending tasks, and delays through the interactive dashboard.
-5. **Performance Analytics**: Access graphical representations of organization-wide performance metrics for informed decision-making.
+A big thank you to our top contributors who have significantly improved AI-Scribe. Your hard work and dedication are truly appreciated! 🌟😄
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+[![Contributors](https://contrib.rocks/image?repo=mdkaifansari04/AI-Scribe)](https://github.com/mdkaifansari04/AI-Scribe/graphs/contributors)
 
+## 🙏🏽 Support
 
-<!-- ROADMAP -->
-## Roadmap
-
-### Phase 1: Project Initiation
-
-- [x] Define Project Requirements: Establish a clear understanding of the project's scope, objectives, and core functionality.
-- [x] Create User Personas and User Stories: Develop user personas to align the project with user needs and create user stories to guide development.
-- [x] Outline Core Features and Functional Requirements: Define the essential features, such as story prompt submission, AI-generated stories, and upvoting.
-- [x] Specify Non-Functional Requirements: Identify non-functional aspects, including performance, security, and scalability.
-- [x] Design User Interface (UI): Create mockups and design the user interface to ensure an attractive and user-friendly experience.
-
-### Phase 2: Development and Testing 
-
-- [ ] Complete Development Phase: Implement the frontend and backend components, integrating the OpenAI API for text generation.
-- [ ] Execute Testing Phase: Rigorously test the platform to identify and resolve any bugs, performance issues, or usability concerns.
-
-### Phase 3: Launch and Post-launch 
-
-- [ ] Launch Date: Officially launch the AI Story Generator to the public, making it accessible to users.
-- [ ] Gather User Feedback: Encourage user engagement and collect feedback to understand their experiences and areas for improvement.
-- [ ] Continuous Improvement and Feature Enhancements: Based on user feedback and evolving requirements, work on enhancing the platform. Potential enhancements include:
-  - [ ] User Avatar Generation: Implement user avatar generation to add a personal touch.
-  - [ ] User-Generated Story Pages: Provide users with dedicated pages to manage stories they have generated.
-  - [ ] Editing and Deletion: Allow users to edit and delete their contributed stories.
-  - [ ] Story Tags and Themes: Enable users to tag stories and request stories with specific tones or themes.
-  - [ ] Sharing Stories: Enhance user engagement by enabling easy sharing of generated stories on external platforms.
-
-The roadmap outlines the key phases of the project, from initiation to post-launch enhancements. It's a dynamic plan that can evolve based on the project's progress and user feedback.
-
-### Future Enhancements
-
-- [ ] Create Admin and user chat feature
-- [ ] AI bot integration
-- [ ] Email and notification features
-- [ ] Courses platform
-- [ ] Super Admin Functionality
-    - [ ] Website Customization
-    - [ ] Admin Access Control
-
-See the [open issues](https://github.com/Mdkaif-123/Task-Unity/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some Amazing
+This project needs your support! Please star 🌟 this repository to show your appreciation.
