@@ -10,6 +10,7 @@ AI-Scribe is a dynamic web application that brings discussions to life using cut
 
 ## ⚡ Project Status
 
+
 <div align="center">
 
 ![GitHub contributors](https://img.shields.io/github/contributors/mdkaifansari04/AI-Scribe?style=for-the-badge&color=%2314B8A5)
