@@ -1,12 +1,15 @@
 # AI-Scribe - Your Hub for Interactive Discussions
 
 <div align="center">
+  
   [![AI-Scribe Banner](https://res.cloudinary.com/dngfmzv2g/image/upload/v1695238520/ai-scribe-website-favicon-color_rqk9oe.png)](https://github.com/mdkaifansari04/AI-Scribe)
+  
 </div>
 
 AI-Scribe is a dynamic web application that brings discussions to life using cutting-edge technologies such as Next.js 14, MongoDB, and Clerk for authentication. From its humble beginnings, AI-Scribe has evolved into a robust platform featuring optimized architecture, polished code, and a sleek UI. Join the conversation seamlessly and explore the world of interactive discussions!
 
 ## ⚡ Project Status
+
 
 <div align="center">
 
@@ -110,20 +113,8 @@ AI-Scribe enables users to create and participate in vibrant communities. Users 
 
 AI-Scribe is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🤔 How to Contribute?
-
-Contributing to open-source software (OSS) projects is a rewarding experience. It allows you to learn new skills and make valuable contributions to the community.
-
-- Read our [Code of Conduct](CODE_OF_CONDUCT.md) before contributing.
-- Follow the [Git Workflow](docs/git.md) for best practices.
-- Check the [Contribution Guidelines](CONTRIBUTING.md) for detailed instructions.
-- Create an [issue](https://github.com/mdkaifansari04/AI-Scribe/issues) to report bugs or suggest new features.
-- Ensure your commits have descriptive messages.
-
-### Setup
-
+## Setup
 - [Setting up a development environment](docs/setup.md)
-- [Setting up Clerk](docs/clerk.md)
 
 ## ✨ Top Contributors
 
