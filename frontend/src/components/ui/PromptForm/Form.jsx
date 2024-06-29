@@ -64,7 +64,7 @@ function Form() {
             required
           />
           <Select
-            color={themeColor}
+            color="blue-gray"
             name="thrill"
             id="thrill"
             onChange={(value) => handleChange("thrill", value)}
@@ -79,7 +79,7 @@ function Form() {
             <Option value={"heart-pounding"}>Heart-Pounding</Option>
           </Select>
           <Select
-            color={themeColor}
+            color="blue-gray"
             name="emotion"
             id="emotion"
             onChange={(value) => handleChange("emotion", value)}
@@ -106,7 +106,7 @@ function Form() {
             <Option value={"Regret"}>Regret</Option>
           </Select>
           <Select
-            color={themeColor}
+            color="blue-gray"
             name="humor"
             id="humor"
             onChange={(value) => handleChange("humor", value)}
@@ -120,7 +120,7 @@ function Form() {
             <Option value={"hilarious"}>Hilarious</Option>
           </Select>
           <Select
-            color={themeColor}
+            color="blue-gray"
             name="suspense"
             id="suspense"
             onChange={(value) => handleChange("suspense", value)}
@@ -136,7 +136,7 @@ function Form() {
           </Select>
 
           <Select
-            color={themeColor}
+            color="blue-gray"
             name="storyType"
             id="storyType"
             onChange={(value) => handleChange("storyType", value)}
@@ -163,7 +163,7 @@ function Form() {
             <Option value={"children"}>Children's Story</Option>
           </Select>
           <Select
-            color={themeColor}
+            color="blue-gray"
             name="userType"
             id="userType"
             onChange={(value) => handleChange("userType", value)}

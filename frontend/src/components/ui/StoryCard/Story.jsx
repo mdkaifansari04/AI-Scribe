@@ -28,7 +28,7 @@ export function Story(props) {
   };
 
   return (
-    <Card className="mt-6 rounded-md w-96 mx-4 text-slate-600 dark:bg-[#1E293B] dark:text-white">
+    <Card className="mt-6 rounded-md w-96 mx-4 text-slate-600 shadow-md  dark:bg-[#1E293B] dark:text-white">
       <CardBody className="pb-3">
         <Typography
           className="mb-2 dark:text-[#3BBCF6]"

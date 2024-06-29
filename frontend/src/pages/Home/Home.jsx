@@ -28,7 +28,7 @@ function Home() {
   useEffect(() => {
     if (!navigator.onLine) toast.error("No Internet Connection", option);
     if (!localStorage.getItem("aiScribeAuthToken")) navigate("/login");
-    console.log(localStorage.getItem("aiScribeAuthToken"));
+    // console.log(localStorage.getItem("aiScribeAuthToken"));
   }, []);
 
   useEffect(() => {
@@ -54,7 +54,7 @@ function Home() {
           <DrawerComponent open={open} closeDrawer={closeDrawer} />
         </div>
       )}
-      <div className="body dark:bg-[#0F172A]">
+      <div className="body  dark:bg-[#0F172A]">
         <MainNavbar
           desktopOption={desktopOption}
           openDrawer={openDrawer}

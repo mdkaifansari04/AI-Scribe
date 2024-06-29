@@ -6,6 +6,7 @@ import Login from "./pages/auth/Login";
 import GenerateStory from "./pages/story/GenerateStory";
 import MyStory from "./pages/story/MyStory";
 import SignUp from "./pages/auth/SignUp";
+import NotFound from "./pages/NotFound/NotFound";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             </Route>
             <Route exact path="/login" element={<Login />} />
             <Route exact path="/sign-up" element={<SignUp />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </Router>
       </main>
