@@ -1,4 +1,5 @@
 import React from "react";
+import NotFound from "../pages/NotFound/NotFound";
 
 class ErrorBoundary extends React.Component {
   constructor(props) {
@@ -17,13 +18,7 @@ class ErrorBoundary extends React.Component {
 
   render() {
     if (this.state.hasError) {
-      return (
-        <div className="text-center">
-          <h1>404 - Page Not Found</h1>
-          <p>Sorry, the page you are looking for does not exist.</p>
-          <Link to="/">Go to Homepage</Link>
-        </div>
-      );
+      return <NotFound />;
     }
 
     return this.props.children;

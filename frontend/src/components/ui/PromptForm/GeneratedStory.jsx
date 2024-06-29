@@ -61,7 +61,7 @@ function GeneratedStory() {
   return (
     <div className="generated-story my-6 rounded-md">
       {generatedStory && (
-        <div className="story mx-5 bg-green-100 dark:bg-teal-50 p-5 px-10 rounded-md">
+        <div className="story mx-5 bg-green-100 dark:bg-teal-50 text-black p-5 px-10 rounded-md">
           {/* <Heading heading={"Generated Story"} /> */}
           <div className="flex justify-between my-6 dark:text-[#0b1b2b]">
             <div className="title text-2xl">{generatedStory.title}</div>
