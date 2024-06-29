@@ -10,24 +10,15 @@ import {
 import { Link, useNavigate } from "react-router-dom";
 
 import { styled, useTheme } from "@mui/material/styles";
-import Box from "@mui/material/Box";
+
 import MuiDrawer from "@mui/material/Drawer";
 import MuiAppBar from "@mui/material/AppBar";
-import Toolbar from "@mui/material/Toolbar";
+
 import List from "@mui/material/List";
-import CssBaseline from "@mui/material/CssBaseline";
+
 import Typography from "@mui/material/Typography";
-import Divider from "@mui/material/Divider";
-import IconButton from "@mui/material/IconButton";
-import MenuIcon from "@mui/icons-material/Menu";
-import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
-import ChevronRightIcon from "@mui/icons-material/ChevronRight";
+
 import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemIcon from "@mui/material/ListItemIcon";
-import ListItemText from "@mui/material/ListItemText";
-import InboxIcon from "@mui/icons-material/MoveToInbox";
-import MailIcon from "@mui/icons-material/Mail";
 
 const drawerWidth = 240;
 
@@ -97,17 +88,6 @@ const Drawer = styled(MuiDrawer, {
 }));
 
 function SideMenu() {
-  const theme = useTheme();
-  const [open, setOpen] = React.useState(false);
-
-  const handleDrawerOpen = () => {
-    setOpen(true);
-  };
-
-  const handleDrawerClose = () => {
-    setOpen(false);
-  }; // mine until
-
   const navigate = useNavigate();
   const handleLogout = () => {
     localStorage.removeItem("aiScribeAuthToken");
@@ -118,7 +98,7 @@ function SideMenu() {
 
   return (
     <div>
-      <Card className="h-[calc(100vh)] max-w-[15rem] p-4 bg-[#313A46] dark:bg-[#1E293B] rounded-none text-white shadow-xl outline-8 shadow-blue-gray-900/5">
+      <Card className="h-[calc(100vh)] max-w-[15rem] p-4 bg-[#313A46] dark:bg-[#2C323F] rounded-none text-white shadow-xl outline-8 shadow-blue-gray-900/5">
         <div className="mb-5 p-4">
           <Typography variant="h5" color="blue-gray">
             <div className="logo w-auto h-5">

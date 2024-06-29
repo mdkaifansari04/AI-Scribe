@@ -145,7 +145,7 @@ export default function MainNavbar(props) {
   return (
     <>
       <Navbar
-        className="navbar sticky top-0 z-10 max-w-full h-max rounded-none py-2 px-4 lg:px-8 lg:py-3 dark:bg-[#3A444E] outline-none border-none"
+        className="navbar sticky top-0 z-10 max-w-full h-max rounded-none py-2 px-4 lg:px-8 lg:py-3 dark:bg-[#1E293B] outline-none border-none"
         style={{ boxShadow: "none", opacity: "1", width: "100%" }}
       >
         <div className="flex items-center justify-between text-blue-gray-900">

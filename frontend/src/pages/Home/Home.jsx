@@ -11,7 +11,7 @@ import toast, { Toaster } from "react-hot-toast";
 const option = {
   style: {
     background:
-      localStorage.getItem("aiScribeTheme") === "dark" ? "#0F172A" : "#fff",
+      localStorage.getItem("aiScribeTheme") === "dark" ? "#1E293B" : "#fff",
     color:
       localStorage.getItem("aiScribeTheme") === "dark" ? "#99E4D0" : "#333",
   },
