@@ -9,6 +9,8 @@ import {
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { generateStory } from "../../../global/redux/slice/story";
+import toast, { Toaster } from "react-hot-toast";
+
 function Form() {
   const [promptData, setPromptData] = useState({});
   const [disableBtn, setDisableBtn] = useState(true);
@@ -34,11 +36,17 @@ function Form() {
 
   const dispatch = useDispatch();
   const handleGenerateStory = () => {
+    if (!promptData.story || !promptData.storyType || !promptData.wordLimit) {
+      toast.error("Please fill all required fields.");
+      return;
+    }
     dispatch(generateStory(promptData));
     setDisableBtn(true);
   };
+
   return (
     <>
+      <Toaster position="bottom-center" />
       <form className="mx-auto my-6 w-[90%] max-w-screen-lg dark:text-white">
         <div className="flex flex-col gap-10 w-full">
           <Input
@@ -60,9 +68,54 @@ function Form() {
             value={promptData.wordLimit}
             variant="static"
             label="Word Limit"
-            placeholder=" 100"
+            placeholder="100"
             required
           />
+
+          <Select
+            color="blue-gray"
+            name="genre"
+            id="genre"
+            onChange={(value) => handleChange("storyType", value)}
+            value={promptData.storyType}
+            className="custom-select-menu"
+            variant="static"
+            label="Genre *"
+            required
+          >
+            <Option value={"adventure"}>Adventure</Option>
+            <Option value={"mystery"}>Mystery</Option>
+            <Option value={"romance"}>Romance</Option>
+            <Option value={"science-fiction"}>Science Fiction (Sci-Fi)</Option>
+            <Option value={"fantasy"}>Fantasy</Option>
+            <Option value={"horror"}>Horror</Option>
+            <Option value={"historical-fiction"}>Historical Fiction</Option>
+            <Option value={"dystopian"}>Dystopian</Option>
+            <Option value={"comedy"}>Comedy</Option>
+            <Option value={"biography"}>Biography</Option>
+            <Option value={"fairy-tale"}>Fairy Tale</Option>
+            <Option value={"thriller"}>Thriller/Crime</Option>
+            <Option value={"epic"}>Epic</Option>
+            <Option value={"short-story"}>Short Story</Option>
+            <Option value={"children"}>Children's Story</Option>
+          </Select>
+
+          <Select
+            color="blue-gray"
+            name="storyType"
+            id="storyType"
+            onChange={(value) => handleChange("userType", value)}
+            value={promptData.userType}
+            variant="static"
+            label="Story Type *"
+            required
+          >
+            <Option value={"child"}>Child</Option>
+            <Option value={"teen"}>Teen</Option>
+            <Option value={"young-adult"}>Young Adult</Option>
+            <Option value={"adult"}>Adult</Option>
+            <Option value={"old"}>Old</Option>
+          </Select>
           <Select
             color="blue-gray"
             name="thrill"
@@ -83,7 +136,7 @@ function Form() {
             name="emotion"
             id="emotion"
             onChange={(value) => handleChange("emotion", value)}
-            value={promptData.thrill}
+            value={promptData.emotion}
             variant="static"
             label="Emotion"
           >
@@ -133,50 +186,6 @@ function Form() {
             <Option value={"moderate"}>Moderate</Option>
             <Option value={"high"}>High</Option>
             <Option value={"intense"}>Intense</Option>
-          </Select>
-
-          <Select
-            color="blue-gray"
-            name="storyType"
-            id="storyType"
-            onChange={(value) => handleChange("storyType", value)}
-            value={promptData.storyType}
-            className="custom-select-menu"
-            variant="static"
-            label="Story Type *"
-            required
-          >
-            <Option value={"adventure"}>Adventure</Option>
-            <Option value={"mystery"}>Mystery</Option>
-            <Option value={"romance"}>Romance</Option>
-            <Option value={"science-fiction"}>Science Fiction (Sci-Fi)</Option>
-            <Option value={"fantasy"}>Fantasy</Option>
-            <Option value={"horror"}>Horror</Option>
-            <Option value={"historical-fiction"}>Historical Fiction</Option>
-            <Option value={"dystopian"}>Dystopian</Option>
-            <Option value={"comedy"}>Comedy</Option>
-            <Option value={"biography"}>Biography</Option>
-            <Option value={"fairy-tale"}>Fairy Tale</Option>
-            <Option value={"thriller"}>Thriller/Crime</Option>
-            <Option value={"epic"}>Epic</Option>
-            <Option value={"short-story"}>Short Story</Option>
-            <Option value={"children"}>Children's Story</Option>
-          </Select>
-          <Select
-            color="blue-gray"
-            name="userType"
-            id="userType"
-            onChange={(value) => handleChange("userType", value)}
-            value={promptData.userType}
-            variant="static"
-            label="User Type *"
-            required
-          >
-            <Option value={"child"}>Child</Option>
-            <Option value={"teen"}>Teen</Option>
-            <Option value={"young-adult"}>Young Adult</Option>
-            <Option value={"adult"}>Adult</Option>
-            <Option value={"old"}>Old</Option>
           </Select>
         </div>
         <Button

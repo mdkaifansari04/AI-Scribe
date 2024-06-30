@@ -18,10 +18,10 @@ const NotFound = () => {
           </g>
         </svg> */}
 
-        <h1 class="pt-2  font-extrabold sm:text-base md:text-5xl lg:text-6xl">
+        <h1 class="pt-2 font-extrabold sm:text-base md:text-5xl lg:text-6xl">
           Page not found
         </h1>
-        <h4 class="pt-2 sm:text-base md:text-lg">
+        <h4 class="pt-4 sm:text-base md:text-lg">
           It seems you are lost in space. Let us guide you back to home
         </h4>
 

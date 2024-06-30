@@ -111,7 +111,7 @@ function SideMenu() {
         </div>
         <List className="text-white">
           <Link className="flex flex-row w-[90%] my-2" to="/">
-            <ListItem className="py-4">
+            <ListItem className="p-4 hover:bg-blue-gray-500 rounded-lg">
               <ListItemPrefix>
                 <PresentationChartBarIcon className="h-5 w-5" />
               </ListItemPrefix>
@@ -119,7 +119,7 @@ function SideMenu() {
             </ListItem>
           </Link>
           <Link className="flex flex-row w-[90%] my-2" to="/generate-story">
-            <ListItem className="py-4 ">
+            <ListItem className="p-4 hover:bg-blue-gray-500 rounded-lg ">
               <ListItemPrefix>
                 <SparklesIcon className="h-5 w-5" />
               </ListItemPrefix>
@@ -127,7 +127,7 @@ function SideMenu() {
             </ListItem>
           </Link>
           <Link className="flex flex-row w-[90%] my-2" to="/my-story">
-            <ListItem className="py-4">
+            <ListItem className="p-4 hover:bg-blue-gray-500 rounded-lg">
               <ListItemPrefix>
                 <RocketLaunchIcon className="h-5 w-5" />
               </ListItemPrefix>
@@ -142,7 +142,7 @@ function SideMenu() {
             className="flex flex-row w-[90%] my-2"
             to={"/login"}
           >
-            <ListItem className="py-4">
+            <ListItem className="p-4 hover:bg-blue-gray-500 rounded-lg">
               <ListItemPrefix>
                 <PowerIcon className="h-5 w-5" />
               </ListItemPrefix>
