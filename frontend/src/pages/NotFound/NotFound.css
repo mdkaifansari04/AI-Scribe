@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0a1821;
+  height: 100vh;
+  width: 100vw;
+  font-family: Roboto, Arial, sans-serif;
+  color: #fff;
+  text-align: center;
+}
+.not-found {
+  width: 570px;
+  height: 225px;
+  margin-right: -10px;
+}
+.starry-sky {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.notfound-copy {
+  color: #fff;
+  position: fixed;
+  top: 25px;
+  right: 10%;
+  text-align: right;
+}
+
+.home {
+  font-weight: 300;
+  color: #fff;
+  width: fit-content;
+  text-decoration: none;
+}
+.home:hover {
+  background: lightblue;
+  padding: 0.5rem;
+  transition: 0.3s ease;
+  color: black;
+  border-radius: 1rem;
+}
+/* change to alternating star opacities */
+.all-stars {
+  animation: blinkblink 7s linear infinite;
+}
+
+@keyframes blinkblink {
+  50% {
+    opacity: 0.1;
+  }
+}
+.moon {
+}

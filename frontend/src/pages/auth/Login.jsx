@@ -63,7 +63,7 @@ function Login() {
               <div className="heading p-2">
                 <Typography
                   className="text-center text-white"
-                  variant="h4"
+                  variant="h3"
                   color="blue-gray"
                 >
                   Login to your Account
@@ -99,7 +99,7 @@ function Login() {
                 </div>
                 <Button
                   onClick={handleLogin}
-                  className="mt-6 bg-[#65edc6] text-black flex justify-center rounded-full"
+                  className="mt-6 bg-[#48caa5] text-black tracking-widest flex justify-center rounded-full"
                   fullWidth
                 >
                   {loading ? (
